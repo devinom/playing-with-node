@@ -5,6 +5,7 @@ const os = require('os');
 const notes = require('./notes.js');
 
 let userInfo = os.userInfo();
+console.log(userInfo);
 let filepath = 'greetings.txt';
 let content = `Hello ${userInfo.username}! You are ${notes.getAge('03/04/1996')}!`;
 
